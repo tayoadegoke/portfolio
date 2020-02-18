@@ -8,7 +8,7 @@ export default class Work extends Component {
             <Nav></Nav>
             <div className='main-content'> 
                 <div>
-                    <h1 style={{textAlign:"center", fontSize:"42px", }}><span>My Work</span>
+                    <h1 style={{textAlign:"center", fontSize:"42px", }}><span>Projects</span>
                     </h1>
                    
                 </div>

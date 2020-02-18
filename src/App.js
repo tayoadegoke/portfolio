@@ -7,7 +7,7 @@ import Work from './pages/work/Work'
 function App() {
   return (
     <div className="App">
-      <Work></Work>
+      <About></About>
     </div>
   );
 }

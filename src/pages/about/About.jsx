@@ -9,7 +9,7 @@ export default class About extends Component {
                <Nav></Nav>
                 <div className='main-content'> 
                     <div className="bio-heading">
-                        {<img className="profile-img" src="./gitav.jpeg"></img>}
+                     
                         <h1>Hello my name is <span className="highlight">Tayo Adegoke</span>, I am a <span className={"highlight"}>full stack developer</span> from Lagos, Nigeria. </h1>
                         <button className="btn">View My Projects</button>
                     </div>

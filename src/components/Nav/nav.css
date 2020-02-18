@@ -4,7 +4,7 @@
     height: 100vh;
     color: white;
     text-align: center;
-    padding-top: 10%;
+    padding-top: 5%;
     position: fixed;
     top:0;
     left:0;
@@ -14,14 +14,14 @@
 }
 
 .side-bar ul{
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 .side-bar ul li{
     list-style: none;
-    font-size: 3em;
-    padding-bottom: 10%;
-    padding-top: 10%;
+    font-size: 2em;
+    padding-bottom: 6%;
+    padding-top: 6%;
 }
 .side-bar ul li:hover{
     color:#252525;
@@ -42,33 +42,14 @@
     grid-area:mc;
 }
 
-.bio-heading h1 {
- color: #252525;
- font-size: 3rem;
- font-weight: 600;
- margin-top: 3%;
- padding-left:10%;
- padding-right: 10%;
-}
+
 .highlight{
 
     color: #1565c0;
 }
 
-.profile-img{
-    margin-top: 5%;
-    margin-left: 10%;
-    max-width: 300px;
-    border-radius: 50%;
-}
-.btn{
-    margin-left: 10%;
-    font-size: 2.5em;
-    padding:20px;
-    border-radius: 5%;
-    color:#ffffff;
-    background-color:#1565c0;
-}
+
+
     
 .btn:hover{
    

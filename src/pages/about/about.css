@@ -5,32 +5,7 @@
     grid-template-areas: "sd mc";
 }
 
-.side-bar{
-    grid-area:sd;
-    background-color: #1565c0;
-    height: 100vh;
-    color: white;
-    text-align: center;
-    padding-top: 10%;
 
-}
-
-.side-bar ul{
-    margin-top: 20%;
-}
-
-.side-bar ul li{
-    list-style: none;
-    font-size: 3em;
-    padding-bottom: 10%;
-    padding-top: 10%;
-}
-.side-bar ul li:hover{
-    color:#252525;
-    /*background-color: #252525;*/
-    padding-right: 10%;
-
-}
 
 .active{
     color:#ffffff;
@@ -46,9 +21,9 @@
 
 .bio-heading h1 {
  color: #252525;
- font-size: 3rem;
+ font-size: 2.5rem;
  font-weight: 600;
- margin-top: 3%;
+ margin-top: 20%;
  padding-left:10%;
  padding-right: 10%;
 }
@@ -60,12 +35,12 @@
 .profile-img{
     margin-top: 5%;
     margin-left: 10%;
-    max-width: 300px;
+    max-width: 150px;
     border-radius: 50%;
 }
 .btn{
     margin-left: 10%;
-    font-size: 2.5em;
+    font-size: 1.5em;
     padding:20px;
     border-radius: 5%;
     color:#ffffff;

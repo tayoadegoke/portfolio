@@ -7,7 +7,7 @@ export default class Nav extends Component {
                 <div className='side-bar'>
                     
                    {/*<h1>Logo</h1>  */}
-
+                   {<img className="profile-img" src="./gitav.jpeg"></img>}
                    <ul>
                       <li className="active">About</li>
                       <li>Projects</li>

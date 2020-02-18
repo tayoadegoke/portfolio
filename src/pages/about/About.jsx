@@ -1,22 +1,12 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
 import './about.css'
-
+import Nav from '../../components/Nav/Nav'
 export default class About extends Component {
     render() {
         return (
             <div className='page-wrapper'>
-                <div className='side-bar'>
-                    
-                   {/*<h1>Logo</h1>  */}
-
-                   <ul>
-                      <li className="active">About</li>
-                      <li>Projects</li>
-                      <li>Résumé</li>
-                      <li>Contact</li>
-                    
-                   </ul>  
-                </div>
+               <Nav></Nav>
                 <div className='main-content'> 
                     <div className="bio-heading">
                         {<img className="profile-img" src="./gitav.jpeg"></img>}

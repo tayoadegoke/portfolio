@@ -1,45 +1,43 @@
 import React, { Component } from 'react'
 import './work.css'
+import Nav from '../../components/Nav/Nav'
 export default class Work extends Component {
     render() {
         return (
             <div className='page-wrapper'>
-            <div className='side-bar'>
-                
-               <h1>ghfhfh</h1>    
-            </div>
+            <Nav></Nav>
             <div className='main-content'> 
                 <div className="bio-heading">
-                    <h1 style={{textAlign:"center", fontSize:"42px"}}>My Work
+                    <h1 style={{textAlign:"center", fontSize:"42px", }}><span style={{borderBottom:"solid 3px #1565c0"}}>My Work</span>
                     </h1>
                    
                 </div>
                 <div className ="project">
                     <div className="project1" >
                         
-                        <h3 className="project-headings">Loanchief</h3>
-                        <div>
-                            <img className={"project-pic"} src="./gitav.jpeg"></img>
-                        </div>
                        
-                        <p>hello from the other side</p>
+                        <div>
+                           {/* <img className={"project-pic"} src="./logo-alt2.png"></img>*/}
+                        </div>
+                        <h3 className="project-headings">Loanchief</h3>
+                        
                     </div>
                     <div className="project2">
                         
-                        <h3 className="project-headings">Loanchief</h3>
+                        
                         <div>
-                            <img className={"project-pic"} src="./gitav.jpeg"></img>
+                           {/*} <img className={"project-pic"} src="./logo.png"></img>*/}
                         </div>
+                        <h3 className="project-headings">Instacare</h3>
                        
-                        <p>hello from the other side</p>
                     </div>
                     <div className="project3">
-                         <h3 className="project-headings">Loanchief</h3>
+                        
                          <div>
-                            <img className={"project-pic"} src="./gitav.jpeg"></img>
+                           {/* <img className={"project-pic"} src="./gitav.jpeg"></img>*/}
                         </div>
+                        <h3 className="project-headings">Real Estate</h3>
                        
-                        <p>hello from the other side, to youohohohohdofodhfoufofudoufou</p>
                        
                     </div>
                 </div>

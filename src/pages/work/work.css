@@ -81,33 +81,40 @@
 }
 
 .project{
+    border-top:lightgrey 2px solid;
+    border-bottom: lightgray 2px solid;;
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: auto;
-    grid-template-areas: "pr pr2 pr3";
+    grid-template-areas: "prd pri";
     margin-left: 5%;
+    margin-right: 5%;
    
     
 }
 
-.project1{
-    grid-area:pr;
+.project-img{
+  
    
-    
-}
-.project2{
-    grid-area:pr2
-}
-.project3{
-    grid-area:pr3
+    grid-area: pri;
 }
 
 .project-pic{
   min-width: 200px;
-  max-width: 400px;
+  max-width: 700px;
+  margin-top: 6%;
 }
 
 .project-headings{
     font-weight: 400;
     font-size: 2em;
+
+}
+
+
+
+.project-description p {
+    font-size: 1.3em;
+    font-weight: 400;
+    grid-area: prd;
 }

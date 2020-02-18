@@ -8,37 +8,96 @@ export default class Work extends Component {
             <Nav></Nav>
             <div className='main-content'> 
                 <div className="bio-heading">
-                    <h1 style={{textAlign:"center", fontSize:"42px", }}><span style={{borderBottom:"solid 3px #1565c0"}}>My Work</span>
+                    <h1 style={{textAlign:"center", fontSize:"42px", }}><span>My Work</span>
                     </h1>
                    
                 </div>
                 <div className ="project">
-                    <div className="project1" >
-                        
-                       
-                        <div>
-                           {/* <img className={"project-pic"} src="./logo-alt2.png"></img>*/}
-                        </div>
-                        <h3 className="project-headings">Loanchief</h3>
-                        
+                   <div className={"project-description"}>
+                        <h3 className="project-headings"> 
+                           Mi Casa - <span style={{fontSize:"0.8em"}}>(2020)</span>
+                           
+                        </h3>
+                        <p>A real estate app that allows users buy or rent apartments</p>
+
+                        <h3>Technologies</h3>
+                        <ul>
+                            <li>React</li>
+                            <li>Ant Design</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>Graph Ql</li>
+                            
+                        </ul>
+                   </div>
+                    <div className={"project-img"}>
+                        <img className={"project-pic"}src="./loanchiefscreen.png"></img>
                     </div>
-                    <div className="project2">
-                        
-                        
-                        <div>
-                           {/*} <img className={"project-pic"} src="./logo.png"></img>*/}
-                        </div>
-                        <h3 className="project-headings">Instacare</h3>
-                       
+                </div>
+                <div className ="project">
+                   <div className={"project-description"}>
+                        <h3 className="project-headings"> 
+                           Mi Casa - <span style={{fontSize:"0.8em"}}>(2020)</span>
+                           
+                        </h3>
+                        <p>A real estate app that allows users buy or rent apartments</p>
+
+                        <h3>Technologies</h3>
+                        <ul>
+                            <li>React</li>
+                            <li>Ant Design</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>Graph Ql</li>
+                            
+                        </ul>
+                   </div>
+                    <div className={"project-img"}>
+                        <img className={"project-pic"}src="./loanchiefscreen.png"></img>
                     </div>
-                    <div className="project3">
-                        
-                         <div>
-                           {/* <img className={"project-pic"} src="./gitav.jpeg"></img>*/}
-                        </div>
-                        <h3 className="project-headings">Real Estate</h3>
-                       
-                       
+                </div>
+                <div className ="project">
+                   <div className={"project-description"}>
+                        <h3 className="project-headings"> 
+                           Mi Casa - <span style={{fontSize:"0.8em"}}>(2020)</span>
+                           
+                        </h3>
+                        <p>A real estate app that allows users buy or rent apartments</p>
+
+                        <h3>Technologies</h3>
+                        <ul>
+                            <li>React</li>
+                            <li>Ant Design</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>Graph Ql</li>
+                            
+                        </ul>
+                   </div>
+                    <div className={"project-img"}>
+                        <img className={"project-pic"}src="./loanchiefscreen.png"></img>
+                    </div>
+                </div>
+                <div className ="project">
+                   <div className={"project-description"}>
+                        <h3 className="project-headings"> 
+                           Mi Casa - <span style={{fontSize:"0.8em"}}>(2020)</span>
+                           
+                        </h3>
+                        <p>A real estate app that allows users buy or rent apartments</p>
+
+                        <h3>Technologies</h3>
+                        <ul>
+                            <li>React</li>
+                            <li>Ant Design</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>Graph Ql</li>
+                            
+                        </ul>
+                   </div>
+                    <div className={"project-img"}>
+                        <img className={"project-pic"}src="./loanchiefscreen.png"></img>
                     </div>
                 </div>
             </div>

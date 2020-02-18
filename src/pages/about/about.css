@@ -1,0 +1,15 @@
+.page-wrapper{
+    display:grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto;
+    grid-template-areas: "sd mc";
+}
+
+.side-bar{
+    grid-area:sd;
+
+}
+
+.main-content{
+    grid-area:mc;
+}

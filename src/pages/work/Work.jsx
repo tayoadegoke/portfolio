@@ -75,7 +75,7 @@ export default class Work extends Component {
                             <li>Formelo</li>
                            
                         </ul>
-                        <button className={"demo-btn"}>View Demo</button>
+                        <a  target="_blank" href="https://www.loanchief.com.ng" ><button className={"demo-btn"}>View Demo</button></a>
                    </div>
                     <div className={"project-img"}>
                         <img className={"project-pic"}src="./loanchiefscreen.png"></img>

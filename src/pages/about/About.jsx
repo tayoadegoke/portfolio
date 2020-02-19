@@ -11,7 +11,7 @@ export default class About extends Component {
                     <div className="bio-heading">
                      
                         <h1>Hello my name is <span className="highlight">Tayo Adegoke</span>, I am a <span className={"highlight"}>full stack developer</span> from Lagos, Nigeria. </h1>
-                        <button className="btn">View My Projects</button>
+                        <Link to="/projects"><button className="btn">View My Projects</button></Link>
                     </div>
                 </div>
 

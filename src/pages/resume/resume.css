@@ -5,7 +5,17 @@
     grid-template-areas: "sd mc";
 }
 
-
+@media only screen and (min-device-width : 320px) and (max-device-width : 790px) {
+    /* Styles */
+    .page-wrapper{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: "sd "
+                             "mc";
+    }
+    
+    }
 
 .main-content{
     grid-area:mc;
@@ -40,6 +50,26 @@
     
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 790px) {
+    /* Styles */
+    .project{
+        border-top:lightgrey 2px solid;
+        border-bottom: lightgray 2px solid;;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: "pri"
+                             "prd";
+        margin-left: 5%;
+        margin-right: 5%;
+    }    
+    
+    .company-pic{
+        width:150px;
+        
+    }
+    }
+
 .company-img{
   
    
@@ -49,7 +79,7 @@
 
 .company-pic{
   min-width: 100px;
-  max-width: 100%;
+  max-width: 250px;
   margin-top: 2%;
 }
 

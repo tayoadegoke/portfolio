@@ -12,8 +12,8 @@ export default class Nav extends Component {
                    <ul>
                       <Link to="/"><li className="active">About</li></Link>
                       <Link to="/projects"><li>Projects</li></Link>
-                      <Link><li>Résumé</li></Link>
-                      <Link><li>Contact</li></Link>
+                      <Link to="/resume"><li>Résumé</li></Link>
+                      <Link to="/"><li>Contact</li></Link>
                     
                    </ul>  
                 </div>

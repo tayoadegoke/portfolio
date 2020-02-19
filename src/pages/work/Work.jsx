@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './work.css'
 import Nav from '../../components/Nav/Nav'
+import {Link} from 'react-router-dom';
 export default class Work extends Component {
     render() {
         return (

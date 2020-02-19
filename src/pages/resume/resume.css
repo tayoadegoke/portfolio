@@ -1,0 +1,77 @@
+.page-wrapper{
+    display:grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto;
+    grid-template-areas: "sd mc";
+}
+
+
+
+.main-content{
+    grid-area:mc;
+}
+
+
+.highlight{
+
+    color: #1565c0;
+}
+
+
+
+.btn:hover{
+   
+   
+    color:#ffffff;
+    background-color: #252525;
+   
+}
+
+.project{
+    border-top:lightgrey 2px solid;
+    border-bottom: lightgray 2px solid;;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "prd pri";
+    margin-left: 5%;
+    margin-right: 5%;
+   
+    
+}
+
+.company-img{
+  
+   
+    grid-area: pri;
+    margin :4% auto;
+}
+
+.company-pic{
+  min-width: 100px;
+  max-width: 100%;
+  margin-top: 2%;
+}
+
+.project-headings{
+    font-weight: 400;
+    font-size: 2em;
+
+}
+
+
+
+.project-description p {
+    font-size: 1.3em;
+    font-weight: 400;
+    grid-area: prd;
+}
+
+
+.dates{
+    font-size: 0.7em;
+    font-weight: 300;
+}
+.duties-list li{
+    padding-bottom: 4%;
+}

@@ -44,8 +44,7 @@
     /* Styles */
 
     .project{
-        border-top:lightgrey 2px solid;
-        border-bottom: lightgray 2px solid;;
+      
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: auto;
@@ -77,7 +76,8 @@
 .project-headings{
     font-weight: 400;
     font-size: 2em;
-
+   
+    
 }
 
 

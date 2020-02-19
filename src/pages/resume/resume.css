@@ -37,9 +37,8 @@
    
 }
 
-.project{
-    border-top:lightgrey 2px solid;
-    border-bottom: lightgray 2px solid;;
+.company{
+  
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
@@ -52,9 +51,8 @@
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 790px) {
     /* Styles */
-    .project{
-        border-top:lightgrey 2px solid;
-        border-bottom: lightgray 2px solid;;
+    .company{
+      
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: auto;
@@ -83,16 +81,16 @@
   margin-top: 2%;
 }
 
-.project-headings{
+.company-headings{
     font-weight: 400;
     font-size: 2em;
-
+    border-bottom: lightgray 2px solid;;
 }
 
 
 
-.project-description p {
-    font-size: 1.3em;
+.company-description p {
+    font-size: 1.2em;
     font-weight: 400;
     grid-area: prd;
 }

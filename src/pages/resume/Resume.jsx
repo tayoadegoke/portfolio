@@ -8,19 +8,19 @@ export default class Resume extends Component {
             <Nav></Nav>
             <div className='main-content'> 
                 <div>
-                    <h1 style={{textAlign:"center", fontSize:"42px", }}><span>Resume</span>
+                    <h1 style={{textAlign:"center", fontSize:"42px", }}><span>Résumé</span>
                     </h1>
                    
                 </div>
               
-                <h3 className="project-headings" style={{marginLeft:"5%"}}> 
+                <h3 className="company-headings" style={{marginLeft:"5%"}}> 
                            Work Experience 
                            
                 </h3>
-                <div className ="project">
-                   <div className={"project-description"}>
+                <div className ="company">
+                   <div className={"company-description"}>
                       <h2>PM Global Technology Services</h2>
-                      <p>Associate Software Engineer <span className={"dates"}>(Aug 2019 - Present)</span> </p>
+                      <p style={{fontSize:"1.2em"}}>Associate Software Engineer <span className={"dates"}>(Aug 2019 - Present)</span> </p>
                        
                        <h4> Duties</h4>
                        <ul className="duties-list">
@@ -36,14 +36,14 @@ export default class Resume extends Component {
                 </div>
 
 
-                <h3 className="project-headings" style={{marginLeft:"5%"}}> 
+                <h3 className="company-headings" style={{marginLeft:"5%"}}> 
                            Education 
                            
                 </h3>
-                <div className ="project">
-                   <div className={"project-description"}>
+                <div className ="company">
+                   <div className={"company-description"}>
                       <h2>ALC Grow With Google</h2>
-                      <p>Mobile Web Track <span className={"dates"}> (June 2019 - Sept 2019)</span> </p>
+                      <p style={{fontSize:"1.2em"}}>Mobile Web Track <span className={"dates"}> (June 2019 - Sept 2019)</span> </p>
                        <p style={{fontSize:"0.9em", lineHeight:"20px"}}>Grow with Google has sponsored 30,000 developers in Africa to receive education from Pluralsight, supported by the Andela Learning Community. I was privileged to receive a scholarship to study in the Mobile Web Specialist Track while solving code challenges and being mentored by industry professionals.</p>
                    </div>
                     <div className={"company-img"}>
@@ -51,8 +51,8 @@ export default class Resume extends Component {
                     <img className={"company-pic"}src="./alc.png"></img>
                     </div>
                 </div>
-                <div className ="project">
-                   <div className={"project-description"}>
+                <div className ="company">
+                   <div className={"company-description"}>
                       <h2>Bells University Of Technology</h2>
                       <p>B.Tech Electrical Electronics Engineering <span className={"dates"}>(2012-2017)</span> </p>
                    </div>

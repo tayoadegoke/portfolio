@@ -4,10 +4,15 @@ import Nav from '../../components/Nav/Nav'
 import {Link} from 'react-router-dom';
 export default class Work extends Component {
     render() {
+
+       function toggleNav() {
+            console.log("hello nav")
+        }
         return (
             <div className='page-wrapper'>
             <Nav></Nav>
             <div className='main-content'> 
+            <img  src="./hamb.png" onClick={toggleNav}className={"hamb"}></img>
                 <div>
                     <h1 style={{textAlign:"center", fontSize:"42px", }}><span>Projects</span>
                     </h1>

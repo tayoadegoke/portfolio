@@ -2,11 +2,14 @@ import React, { Component } from 'react'
 import './nav.css';
 import {Link} from 'react-router-dom'
 export default class Nav extends Component {
+    
+   
     render() {
+        console.log(this.props.navStyles)
         return (
            
-                <div className='side-bar'>
-                    
+                <div className='side-bar' style={this.props.navStyles}>
+                    <img  src="./hamb.png" onClick={this.props.toggleNav}className={"hamb"}></img>
                    {/*<h1>Logo</h1>  */}
                    {<img className="profile-img" src="./gitav.jpeg"></img>}
                    <ul>

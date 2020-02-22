@@ -44,7 +44,7 @@
     
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 880px) {
     /* Styles */
 
     .project{
@@ -106,4 +106,16 @@
     background-color: #1565c0;
     padding: 10px;
     margin-bottom: 5%;
+}
+
+.contactimg{
+    width:70px;
+    padding: 10%;
+}
+.contactimg:hover{
+    cursor: pointer;
+    background-color: lightgrey;
+}
+a{
+    text-decoration: none;
 }

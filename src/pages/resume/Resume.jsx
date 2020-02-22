@@ -2,11 +2,36 @@ import React, { Component } from 'react'
 import './resume.css'
 import Nav from '../../components/Nav/Nav'
 export default class Resume extends Component {
+    state = {
+        nav:null
+    }
+
+   navStyles={
+        display:"block",
+        left: "0",
+        transition: "all 0.5s",
+        width:"100%",
+    }
+
+    navStylesclose = {
+        left:"-600px",
+        transition:"all 0.5s"
+    }
+
+     toggleNav = ( )=>{
+         if(this.state.nav==null || this.state.nav==this.navStylesclose){
+        this.setState({nav:this.navStyles})
+         }else if(this.state.nav == this.navStyles){
+             this.setState({nav:this.navStylesclose})
+         }
+    }
+
     render() {
         return (
             <div className='page-wrapper'>
-            <Nav></Nav>
+            <Nav navStyles={this.state.nav} toggleNav={this.toggleNav} active={"resume"}></Nav>
             <div className='main-content'> 
+            <img  src="./hamb.png" onClick={this.toggleNav}className={"hamb"}></img>
                 <div>
                     <h1 style={{textAlign:"center", fontSize:"42px", }}><span>Résumé</span>
                     </h1>

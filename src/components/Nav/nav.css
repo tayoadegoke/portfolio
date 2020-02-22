@@ -14,7 +14,8 @@
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 790px) {
     .side-bar{
-        display: none ;
+       
+        left: -800px;
     }
     }
 
@@ -42,8 +43,8 @@
 
 .active{
     color:#ffffff;
-    background-color: #252525;
-    padding-right: 10%;
+    background-color: #252525 !important;
+    /*padding-right: 10%;*/
 }
 .active:hover{
     color:#ffffff !important;

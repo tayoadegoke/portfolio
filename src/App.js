@@ -5,11 +5,11 @@ import About from './pages/about/About'
 import Work from './pages/work/Work'
 import Resume from './pages/resume/Resume'
 import Contact from './pages/contact/Contact'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { HashRouter, BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <HashRouter basename="/">
     <div className="App">
      <Switch>
           <Route exact path='/' component={About}></Route>
@@ -19,7 +19,7 @@ function App() {
      </Switch>
      
     </div>
-    </Router>
+    </HashRouter>
   );
 }
 

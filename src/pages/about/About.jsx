@@ -10,7 +10,7 @@ export default class About extends Component {
 
      goTo = (id) => {
         var element = document.getElementById(id);
-        element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+        element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
     }
 
     render() {

@@ -1,11 +1,12 @@
 .page-wrapper{
-    background-color: #fefefe;
+    background: #222733;
+    background: linear-gradient(180deg, rgb(0, 0, 8) 0%, rgb(122, 159, 233) 35%, rgb(6, 8, 36) 100%);
 }
 
 
 .navbar {
     width: 100%;
-    background-color:#222733;;
+    background-color:#222733;
     display: block;
     padding: 0 !important;
     margin:0 !important;
@@ -37,6 +38,7 @@
   max-width: 1200px;
   margin: 0 auto !important;
   min-height: 100vh;
+  background-color: #fefefe;
 }
 
 .main-content .bio-heading {

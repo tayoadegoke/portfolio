@@ -7,23 +7,36 @@
 .navbar {
     width: 100%;
     background-color:#222733;
-    display: block;
     padding: 0 !important;
     margin:0 !important;
     position: fixed;
 }
-
-.navbar ul {
-    text-align: center;
-    padding: 20px;
-    margin: 0 !important;
+.navbar-content{
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
 }
-.navbar ul li {
+.navbar-content h3 {
+    font-size: 1.5em;
+    color: white;
+    width: 20%;
+    text-align: center;
+}
+.navbar-content ul {
+    margin: 0 !important;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: flex-end !important;
+}
+.navbar-content ul li {
     display: inline;
     padding: 15px;
     font-size: 1em;
     color: #fefefe !important;
     cursor: pointer;
+   
 }
 
  a{
@@ -37,15 +50,82 @@
 .main-content{
   max-width: 1200px;
   margin: 0 auto !important;
-  min-height: 100vh;
+  padding-top: 4em !important;
   background-color: #fefefe;
+  display:flex;
 }
+
+.main-content-2{
+    max-width: 1200px;
+    margin: 0 auto !important;
+    padding-top: 4em !important;
+    background-color: #fefefe;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .projects-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
 
 .main-content .bio-heading {
     text-align: center;
     animation: transitionIn 1.4s;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    flex:0.4;
+}
+.bio-name {
+    font-size: 1.9em;
+    margin-bottom: 0;
+}
+.bio-headline {
+    color:rgba(0,0,0,.54);
+    font-weight: normal;
+    margin: 1em;
+}
+.bio-position {
+    font-size: 1.6em;
+    color: #2160a0;
+    margin:0;
+}
+.main-content .bio-details {
+    text-align: center;
+    animation: transitionIn 1.4s;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    vertical-align: middle;
+    flex:0.6;
+    padding-top: 3em;
 }
 
+
+.tech{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    widows: 50%;
+}
+
+.tech-skills {
+    align-items: center;
+    padding: 4px;
+    align-items: center;
+    vertical-align: center;
+    flex-wrap: wrap;
+}
+.tech-skills p {
+    font-size: 0.9em;
+    font-weight: 400;
+
+}
 .main-content .bio-heading .profile-img{
     width: 200px;
     height: 200px;
@@ -61,7 +141,7 @@
 
 .main-content .bio-heading h1{
     width : 50%;
-    margin: 2em auto;
+    margin: 1em auto;
    
 }
 .highlight {
@@ -87,6 +167,7 @@ title p{
     font-size: 1.2em;
     cursor: pointer;
     animation: transitionHeader 2s;
+    margin-top: 1em;
 }
 .btn:hover {
     background-color: #222733;
@@ -124,8 +205,8 @@ title p{
 }
 
 .contactimg {
-    width: 100px;
-    padding: 20px;
+    width: 50px;
+    padding: 10px;
     cursor: pointer;
 }
 
@@ -134,7 +215,11 @@ title p{
     justify-content: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+    .main-content{
+        flex-direction: column;
+    }
+    
     .main-content .bio-heading h1{
         width : 80% !important;
         margin: 2em auto;
@@ -142,6 +227,10 @@ title p{
         line-height: 1.5;
        
     }
+    .bio-details h1 {
+        font-size: 1.4em;
+    }
+    
     .btn {
         width: 70%;
     }
@@ -149,10 +238,12 @@ title p{
     .title  {
         margin-bottom: 2em !important;
     }
-    .container-div {
-        display: block !important;
-    }
-
+    
+.navbar-content h3 {
+    flex: 0.9;
+    font-size: 1.2em;
+    padding-left: 6px;
+}
   }
   
 

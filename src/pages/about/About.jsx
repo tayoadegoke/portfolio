@@ -23,8 +23,9 @@ export default class About extends Component {
           <h3>Tayo Adegoke</h3>
           <ul>
             <li onClick={() => this.goTo("home")}>Home</li>
+            <li onClick={() => this.goTo("bio")}>About</li>
             <li onClick={() => this.goTo("work")}>Projects</li>
-            <li onClick={() => this.goTo("home")}>Contact</li>
+           
           </ul>
           </div>
         </div>
@@ -100,6 +101,27 @@ export default class About extends Component {
             </button>
           </div>
         </div>
+
+        <div id="bio">
+          <div className="main-content-3">
+          <h1 className="title">About Me</h1>
+          <div className='about'>
+             <p>I am an Msc student of software engineering at the University of Bedfordshire, United Kingdom,
+                graduating in February 2022. 
+               I have a Bachelor of Technology degree in Electrical and Electronics Engineering from Bells University of Technology Ota,
+                Ogun, Nigeria.</p>
+              <p>Previously, I worked as a software developer for two companies in Nigeria, 
+                where I worked on the front end of the applications mostly, using React. I also built some back end API'S using Node and Express. </p>
+              <p>
+                I enjoy creating applications that work on the web using Javascript, however i am currently experimenting with mobile app development.
+              </p>
+          </div>
+          </div>
+           
+        </div>
+
+
+
         <div id="work">
           <div className="main-content-2">
           <h1 className="title">Projects</h1>

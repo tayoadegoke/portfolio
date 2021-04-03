@@ -20,80 +20,81 @@ export default class About extends Component {
       <div className="page-wrapper">
         <div className="navbar">
           <div className="navbar-content">
-          <h3>Tayo Adegoke</h3>
-          <ul>
-            <li onClick={() => this.goTo("home")}>Home</li>
-            <li onClick={() => this.goTo("bio")}>About</li>
-            <li onClick={() => this.goTo("work")}>Projects</li>
-           
-          </ul>
+            <h3>Tayo Adegoke</h3>
+            <ul>
+              <li onClick={() => this.goTo("home")}>Home</li>
+              <li onClick={() => this.goTo("bio")}>About</li>
+              <li onClick={() => this.goTo("work")}>Projects</li>
+            </ul>
           </div>
         </div>
         <div className="main-content" id="home">
           {/* <img  src="./hamb.png" onClick={this.toggleNav}className={"hamb"}></img> */}
           <div className="bio-heading">
             <img className="profile-img" src="./gitav.jpeg"></img>
-            <h3 className='bio-name'>Tayo Adegoke</h3>
-            <p className='bio-headline'>Software Engineering Msc Student</p>
-            <p className='bio-position'>University of Bedfordshire, Luton</p>
-  
-              <div className="container-div">
-                <div>
-                  <a
-                    href="mailto: omotayoadegoke19@gmail.com"
-                    rel="noopener noreferrer"
-                  >
-                    <img className="contactimg" src="./mail.png"></img>
-                  </a>
-                </div>
-                <div>
-                  <a
-                    target="_blank"
-                    href="https://ng.linkedin.com/in/omotayo-adegoke-33a3a3120"
-                    rel="noopener noreferrer"
-                  >
-                    <img className="contactimg" src="./linkedin.png"></img>
-                  </a>
-                </div>
-                <div>
-                  <a
-                    target="_blank"
-                    href="https://github.com/notthattayo"
-                    rel="noopener noreferrer"
-                  >
-                    {" "}
-                    <img className="contactimg" src="./github.png"></img>
-                  </a>
-                </div>
+            <h3 className="bio-name">Tayo Adegoke</h3>
+            <p className="bio-headline">Software Engineering Msc Student</p>
+            <p className="bio-position">University of Bedfordshire, Luton</p>
+
+            <div className="container-div">
+              <div>
+                <a
+                  href="mailto: omotayoadegoke19@gmail.com"
+                  rel="noopener noreferrer"
+                >
+                  <img className="contactimg" src="./mail.png"></img>
+                </a>
+              </div>
+              <div>
+                <a
+                  target="_blank"
+                  href="https://ng.linkedin.com/in/omotayo-adegoke-33a3a3120"
+                  rel="noopener noreferrer"
+                >
+                  <img className="contactimg" src="./linkedin.png"></img>
+                </a>
+              </div>
+              <div>
+                <a
+                  target="_blank"
+                  href="https://github.com/notthattayo"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  <img className="contactimg" src="./github.png"></img>
+                </a>
               </div>
             </div>
-          <div className='bio-details'>
+          </div>
+          <div className="bio-details">
             <h1>
               Hello there &#128512; <br /> I am{" "}
-              <span className="highlight">Tayo Adegoke,</span> a {" "}
+              <span className="highlight">Tayo Adegoke,</span> a{" "}
               <span className={"highlight"}>full stack web developer</span> from
-              Lagos, Nigeria.{" "} I enjoy creating  <span className="highlight">web applications</span> and I use some of the  <span className="highlight">following technologies:</span>
+              Lagos, Nigeria. I enjoy creating{" "}
+              <span className="highlight">web applications</span> and I use some
+              of the <span className="highlight">following technologies:</span>
             </h1>
-            <div className='tech'>
-               <div className='tech-skills'>
-                    <p>React</p>
-                    <img src='./react.png' width='50px' height='50px'></img>
+            <div className="tech">
+              <div className="tech-skills">
+                <p>React</p>
+                <img src="./react.png" width="50px" height="50px"></img>
               </div>
-              <div className='tech-skills'>
-                    <p>Firebase</p>
-                    <img src='./firebase.png' width='50px' height='50px'></img>
+              <div className="tech-skills">
+                <p>Firebase</p>
+                <img src="./firebase.png" width="50px" height="50px"></img>
               </div>
-              <div className='tech-skills'>
-                    <p>GraphQl</p>
-                    <img src='./graphql.png' width='50px' height='50px'></img>
+              <div className="tech-skills">
+                <p>GraphQl</p>
+                <img src="./graphql.png" width="50px" height="50px"></img>
               </div>
-              <div className='tech-skills'>
-                    <p>Node JS</p>
-                    <img src='./node-js.png' width='50px' height='50px'></img>
+              <div className="tech-skills">
+                <p>Node JS</p>
+                <img src="./node-js.png" width="50px" height="50px"></img>
               </div>
-              <div className='tech-skills'>
-                    <p>Mongo DB</p>
-                    <img src='./mongodb.png' width='50px' height='50px'></img>
+              <div className="tech-skills">
+                <p>Mongo DB</p>
+                <img src="./mongodb.png" width="50px" height="50px"></img>
               </div>
             </div>
             <button onClick={() => this.goTo("work")} className="btn">
@@ -104,47 +105,61 @@ export default class About extends Component {
 
         <div id="bio">
           <div className="main-content-3">
-          <h1 className="title">About Me</h1>
-          <div className='about'>
-             <p>I am an Msc student of software engineering at the University of Bedfordshire, United Kingdom,
-                graduating in February 2022. 
-               I have a Bachelor of Technology degree in Electrical and Electronics Engineering from Bells University of Technology Ota,
-                Ogun, Nigeria.</p>
-              <p>Previously, I worked as a software developer for two companies in Nigeria, 
-                where I worked on the front end of the applications mostly, using React. I also built some back end API'S using Node and Express. </p>
+            <h1 className="title">About Me</h1>
+            <div className="about">
               <p>
-                I enjoy creating applications that work on the web using Javascript, however i am currently experimenting with mobile app development.
+                I am an Msc student of software engineering at the University of
+                Bedfordshire, United Kingdom, graduating in February 2022. I
+                have a Bachelor of Technology degree in Electrical and
+                Electronics Engineering from Bells University of Technology Ota,
+                Ogun, Nigeria.
               </p>
+              <p>
+                Previously, I worked as a software developer for two companies
+                in Nigeria, where I worked on the front end of the applications
+                mostly, using React. I also built some back end API'S using Node
+                and Express.{" "}
+              </p>
+              <p>
+                I enjoy creating applications that work on the web using
+                Javascript, however i am currently experimenting with mobile app
+                development.
+              </p>
+            </div>
           </div>
-          </div>
-           
         </div>
-
-
 
         <div id="work">
           <div className="main-content-2">
-          <h1 className="title">Projects</h1>
-          <div className='projects-row'>
-          <div className="bio-heading" style={{ paddingTop: "1em" }}>
-              
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://social-app-7a613.web.app/"
-              >
-                <div className="card">
-                  <h3>Twitter Clone</h3>
-                  <img src="./twit.png"></img>
-                </div>
-              </a>
+            <h1 className="title">Projects</h1>
+            <div className="projects-row">
+              <div className="bio-heading" style={{ paddingTop: "1em" }}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://netflix-review-a96cf.web.app/"
+                >
+                  <div className="card">
+                    <h3>Netflix Review</h3>
+                    <img src="./netflix.png"></img>
+                  </div>
+                </a>
+              </div>
+              <div className="bio-heading" style={{ paddingTop: "1em" }}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://social-app-7a613.web.app/"
+                >
+                  <div className="card">
+                    <h3>Twitter Clone</h3>
+                    <img src="./twit.png"></img>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
-          </div>
-           
         </div>
-
-       
       </div>
     );
   }

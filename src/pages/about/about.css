@@ -84,7 +84,6 @@
   }
   .projects-row {
       display: flex;
-      flex-direction: row;
       justify-content: space-around;
   }
 
@@ -283,6 +282,12 @@ title p{
     flex: 0.9;
     font-size: 1.2em;
     padding-left: 6px;
+}
+.projects-row{
+    flex-direction: column;
+}
+.card {
+    max-width: 100% ;
 }
   }
   

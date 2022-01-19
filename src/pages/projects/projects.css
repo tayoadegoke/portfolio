@@ -1,0 +1,78 @@
+.main-project-content {
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto !important;
+  padding-top: 4em !important;
+  background-color: #fefefe;
+}
+
+.main-project-content h1 {
+  font-weight: 500;
+  text-align: center;
+  border-bottom: solid 1px #2160a0;
+  padding-top: 1em;
+}
+.card h3 {
+  color: #222733;
+}
+.project-card-heading {
+  padding-top: 1em;
+
+  animation: fade-project 1s ease-in;
+}
+.project-card-heading:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  padding-bottom: 40px;
+  background: rgb(6, 8, 36) 100%;
+  color: white !important;
+}
+
+.card {
+  padding: 20px;
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+}
+.card img :hover {
+  background-color: #2160a0;
+}
+.card-details {
+  display: none;
+}
+.card-details p {
+  font-size: 0.9rem;
+}
+.card-details span {
+  font-weight: 800;
+}
+.card-details button {
+  padding: 10px;
+  background-color: rgb(229, 233, 230);
+  color: black;
+  cursor: pointer;
+  border: none;
+  border-radius: 5%;
+}
+
+@keyframes fade-project {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card-details {
+    display: block;
+    color: black;
+  }
+}

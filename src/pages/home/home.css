@@ -1,0 +1,248 @@
+.page-wrapper {
+  background: #222733;
+  background: linear-gradient(
+    180deg,
+    rgb(0, 0, 8) 0%,
+    rgb(122, 159, 233) 35%,
+    rgb(6, 8, 36) 100%
+  );
+  min-height: 100vh;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto !important;
+  padding-top: 4em !important;
+  background-color: #fefefe;
+}
+
+.main-content-2 {
+  max-width: 1200px;
+  margin: 0 auto !important;
+  padding-top: 1em !important;
+  background-color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.about p {
+  text-align: center;
+  font-size: 1.2em;
+  padding-right: 6em;
+  padding-left: 6em;
+  line-height: 1.8;
+  margin-top: 0;
+}
+.projects-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-content .bio-heading {
+  text-align: center;
+  animation: transitionIn 1.4s;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  flex: 0.4;
+}
+.bio-name {
+  font-size: 1.9em;
+  margin-bottom: 0;
+}
+.bio-headline {
+  color: rgba(0, 0, 0, 0.54);
+  font-weight: normal;
+  margin: 1em;
+}
+.bio-position {
+  font-size: 1.6em;
+  color: #2160a0;
+  margin: 0;
+}
+.main-content .bio-details {
+  text-align: center;
+  animation: transitionIn 1.4s;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  vertical-align: middle;
+  flex: 0.6;
+  padding-top: 7em;
+  padding-left: 2em;
+  padding-right: 2em;
+  height: 100vh;
+}
+
+.bio-details h1 {
+  font-size: 1.6em;
+  line-height: 1.5;
+  font-weight: 500;
+  max-width: 70%;
+}
+.bio-details .profile-img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: 2rem;
+}
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  widows: 50%;
+}
+
+.tech-skills {
+  align-items: center;
+  padding: 4px;
+  align-items: center;
+  vertical-align: center;
+  flex-wrap: wrap;
+}
+.tech-skills p {
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+.main-content .bio-heading h1 {
+  width: 50%;
+  margin: 1em auto;
+}
+.highlight {
+  color: #2160a0;
+  font-weight: bold;
+}
+.title {
+  border-bottom: #2160a0 solid 2px;
+  margin: 1em auto !important;
+}
+title p {
+  border-bottom: #2160a0 solid 2px;
+  margin: 0;
+  line-height: 1.7;
+}
+
+a {
+  width: 100%;
+}
+.btn {
+  padding: 10px;
+  color: #fefefe;
+  background-color: #2160a0;
+  border-radius: 10px;
+  width: 20%;
+  font-size: 1.2em;
+  cursor: pointer;
+  animation: transitionHeader 2s;
+  margin-top: 1em;
+  border: none;
+}
+.btn:hover {
+  background-color: #222733;
+}
+
+#work {
+  max-width: 1200px;
+  margin: 0 auto !important;
+  min-height: 100vh;
+  max-width: 1200px;
+}
+
+.contactimg {
+  width: 35px;
+  padding: 10px;
+  cursor: pointer;
+}
+.contactimg:hover {
+  padding-top: 5px;
+}
+
+.container-div {
+  display: flex !important;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .main-content .bio-heading h1 {
+    width: 80% !important;
+    margin: 2em auto;
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  .main-content .bio-details {
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .bio-details h1 {
+    font-size: 1.4em;
+    max-width: 90%;
+  }
+
+  .btn {
+    width: 70%;
+  }
+
+  .title {
+    margin-bottom: 0.5em !important;
+  }
+  .about p {
+    text-align: center;
+    font-size: 1.3em;
+    padding-right: 1em;
+    padding-left: 1em;
+    line-height: 1.4;
+    margin-top: 0;
+  }
+
+  .navbar-content h3 {
+    flex: 0.9;
+    font-size: 1.2em;
+    padding-left: 6px;
+  }
+  .projects-row {
+    flex-direction: column;
+  }
+  .card {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-content .bio-details {
+    height: auto;
+    min-height: 100vh;
+  }
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes transitionHeader {
+  from {
+    opacity: 0;
+    margin-top: 120px;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}

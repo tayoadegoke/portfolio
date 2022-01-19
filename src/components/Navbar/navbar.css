@@ -1,0 +1,93 @@
+.navbar {
+  width: 100%;
+  background-color: #222733;
+  padding: 0 !important;
+  margin: 0 !important;
+  position: fixed;
+}
+.navbar-content {
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+.navbar-content h3 {
+  font-size: 1.5em;
+  color: white;
+  width: 20%;
+  text-align: center;
+}
+.navbar-content ul {
+  margin: 0 !important;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: flex-end;
+}
+.navbar-content ul li {
+  display: inline;
+  padding: 15px;
+  font-size: 1em;
+  color: #fefefe !important;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #fefefe;
+}
+
+.navbar ul li:hover {
+  background: grey;
+}
+
+#hamburger {
+  display: none;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+  #hamburger {
+    display: block;
+    width: 50px;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar ul li {
+    margin-bottom: 2rem;
+  }
+  .navbar-content {
+    flex-wrap: wrap;
+  }
+  .navbar-content h3 {
+    font-size: 1.2rem;
+    color: white;
+    text-align: left;
+  }
+  .stretch {
+    display: flex !important;
+    flex-direction: column;
+    background-color: rgb(19, 14, 14);
+    height: 70vh;
+    width: 100vw !important;
+    text-align: center;
+    z-index: 300;
+
+    justify-content: space-evenly !important;
+    animation: drop-down 0.2s ease-in-out;
+  }
+}
+
+@keyframes drop-down {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

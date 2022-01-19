@@ -20,12 +20,6 @@
 
   animation: fade-project 1s ease-in;
 }
-.project-card-heading:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  padding-bottom: 40px;
-  background: rgb(6, 8, 36) 100%;
-  color: white !important;
-}
 
 .card {
   padding: 20px;
@@ -39,9 +33,7 @@
 .card img {
   width: 100%;
 }
-.card img :hover {
-  background-color: #2160a0;
-}
+
 .card-details {
   display: none;
 }
@@ -59,6 +51,10 @@
   border: none;
   border-radius: 5%;
 }
+.card-details button:hover {
+  background-color: black;
+  color: white;
+}
 
 @keyframes fade-project {
   0% {
@@ -74,5 +70,14 @@
   .card-details {
     display: block;
     color: black;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-card-heading:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    padding-bottom: 40px;
+    background: rgb(6, 8, 36) 100%;
+    color: white !important;
   }
 }

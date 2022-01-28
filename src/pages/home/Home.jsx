@@ -21,7 +21,10 @@ export default class Home extends Component {
       <div className="page-wrapper">
         <div className="main-content" id="home">
           <div className="bio-details">
-            <img className="profile-img" src="./gitav.jpeg"></img>
+            <img
+              className="profile-img"
+              src="https://avatars.githubusercontent.com/u/44408277?v=4"
+            ></img>
             <h1>
               Hello there &#128512; <br /> I am{" "}
               <span className="highlight">Tayo Adegoke,</span> a{" "}

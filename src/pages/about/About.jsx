@@ -43,11 +43,11 @@ function About() {
       image:
         "https://www.gstatic.com/devrel-devsite/prod/v4b49895941ba1dd2df68fee10a0f3d4e3a71c73f4e3e8932eba1481cb318e8c2/firebase/images/lockup.svg?dcb_=0.2464704347908997",
     },
-    // {
-    //   tech: "Aws",
-    //   image:
-    //     "//upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/150px-Amazon_Web_Services_Logo.svg.png",
-    // },
+    {
+      tech: "Aws",
+      image:
+        "//upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/150px-Amazon_Web_Services_Logo.svg.png",
+    },
     {
       tech: "Node Js",
       image:
@@ -101,8 +101,9 @@ function About() {
           <h2>Skills</h2>
           <p>
             I enjoy creating applications that work on the web using Javascript,
-            however i am currently experimenting with mobile app development. I
-            have some valuable experience using the following technologies:
+            however I am currently experimenting with mobile app development and
+            cloud technologies. I have some valuable experience using the
+            following technologies:
           </p>
           <div className="tech">
             {techSkills.map((skill) => {

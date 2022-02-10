@@ -35,7 +35,10 @@ function Projects() {
           >
             <div className="card">
               <h3 id="netflix-review-head">Netflix Review</h3>
-              <img src="./netflix.png" id="netflix-review-img"></img>
+              <img
+                src="https://res.cloudinary.com/notthattayo/image/upload/v1643374787/netflix.png"
+                id="netflix-review-img"
+              ></img>
               <div className="card-details" id="netflix-review-details">
                 <p>
                   <span>About : </span> An application to review netflix movies
@@ -63,7 +66,10 @@ function Projects() {
           >
             <div className="card">
               <h3 id="twitter-clone-head">Twitter Clone</h3>
-              <img src="./twit.png" id="twitter-clone-img"></img>
+              <img
+                src="https://res.cloudinary.com/notthattayo/image/upload/v1643374838/twit.png"
+                id="twitter-clone-img"
+              ></img>
               <div className="card-details" id="twitter-clone-details">
                 <p>
                   <span>About : </span> A Simple Twitter clone with Minimal

@@ -14,7 +14,7 @@ import Contact from "./pages/contact/contact";
 
 function App() {
   return (
-    <Router basename="/">
+    <HashRouter basename="/">
       <div className="App">
         <Navbar />
         <Switch>
@@ -24,7 +24,7 @@ function App() {
           <Route path="/contact" component={Contact}></Route> */}
         </Switch>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 

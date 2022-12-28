@@ -177,7 +177,7 @@ function Home() {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://github.com/notthattayo/netflix-review"
+                    href="https://github.com/notthattayo/sms-portal"
                   >
                     {" "}
                     <button>Github</button>{" "}

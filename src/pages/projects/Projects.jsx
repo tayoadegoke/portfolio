@@ -56,6 +56,10 @@ function Projects() {
                   {" "}
                   <button>View Application</button>{" "}
                 </a>
+                <a target="_blank" rel="noopener noreferrer" href="">
+                  {" "}
+                  <button>View Github</button>{" "}
+                </a>
               </div>
             </div>
           </div>

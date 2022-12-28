@@ -14,17 +14,17 @@ import Contact from "./pages/contact/contact";
 
 function App() {
   return (
-    <HashRouter basename="/">
+    <Router basename="/">
       <div className="App">
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home}></Route>
-          <Route path="/projects" component={Projects}></Route>
+          {/* <Route path="/projects" component={Projects}></Route>
           <Route path="/about" component={About}></Route>
-          <Route path="/contact" component={Contact}></Route>
+          <Route path="/contact" component={Contact}></Route> */}
         </Switch>
       </div>
-    </HashRouter>
+    </Router>
   );
 }
 

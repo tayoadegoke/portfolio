@@ -16,11 +16,15 @@ function Navbar() {
       navLinks.classList.remove("stretch");
     }
   }, [navOpen]);
+
+  const scroll = (target) => {
+    document.getElementById(target).scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="navbar">
       <div className="navbar-content">
         <h3>
-          <Link to={"/"}>Tayo Adegoke</Link>
+          <Link to={"/"}>T.A</Link>
         </h3>
         <img src="./hamb.png" id="hamburger" onClick={() => toggleNav()}></img>
         <ul
@@ -30,26 +34,27 @@ function Navbar() {
             setNavOpen(false);
           }}
         >
-          <Link to={"/"}>
+          <a onClick={() => scroll("home")}>
             <li>Home</li>
-          </Link>
-          <Link to={"/about"}>
+          </a>
+          <a onClick={() => scroll("about")}>
             <li>About</li>
-          </Link>
-          <Link to={"/projects"}>
+          </a>
+          <a onClick={() => scroll("projects")}>
             <li>Projects</li>
-          </Link>
+          </a>
           <a
             href={
               "https://drive.google.com/file/d/1jfiKTRCCumUM9EJM-I684VtAoPW0cWBF/view?usp=sharing"
             }
             target="_blank"
+            className="nav-item"
           >
             <li>Resume</li>
           </a>
-          <Link to={"/contact"}>
+          {/* <div className="nav-item">
             <li>Contact</li>
-          </Link>
+          </div> */}
         </ul>
       </div>
     </div>

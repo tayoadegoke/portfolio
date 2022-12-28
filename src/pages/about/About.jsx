@@ -101,8 +101,8 @@ function About() {
           <h2>Skills</h2>
           <p>
             I enjoy creating applications that work on the web using Javascript,
-            however I am currently experimenting with mobile app development and
-            cloud technologies. I have some valuable experience using the
+            and I am also currently experimenting with mobile app development
+            and cloud technologies. I have some valuable experience using the
             following technologies:
           </p>
           <div className="tech">

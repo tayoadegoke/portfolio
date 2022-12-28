@@ -12,8 +12,8 @@
 .main-about-content {
   max-width: 1200px;
   min-height: 100vh;
+  background: black;
   margin: 0 auto !important;
-  background-color: #fefefe;
   display: flex;
   flex-direction: column;
   padding-top: 5em;

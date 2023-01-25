@@ -113,17 +113,11 @@ function Home() {
           </h1>
           <div className="about" data-aos="fade-up">
             <p>
-              I enjoy creating applications that work on the web using
-              Javascript, and I am also currently experimenting with c# for .NET
-              development as well as Azure for cloud technologies.
+              Over the past 4 years, I have been in involved in building
+              scalable web applications using Javascript, and I am also
+              currently experimenting with c# for .NET development, as well as
+              Azure for cloud technologies.
             </p>
-            <p>
-              Previously, I worked as a full stack developer for two companies,
-              where I mostly worked on the front end of the applications using
-              React and Typescript. I also built some back end API'S using
-              NodeJs and Express.{" "}
-            </p>
-
             <p>
               I have some valuable experience using the following technologies:
             </p>
@@ -151,7 +145,7 @@ function Home() {
               onMouseEnter={() => flipCard("enter", "sms-portal")}
               onMouseLeave={() => flipCard("leave", "sms-portal")}
             >
-              <div className="card">
+              <div className="card" data-aos="flip-right">
                 <h3 id="sms-portal-head">Sms Portal</h3>
                 <img
                   src="https://res.cloudinary.com/notthattayo/image/upload/v1672216858/Screen_Shot_2022-12-28_at_8.40.31_AM.png"
@@ -190,7 +184,7 @@ function Home() {
               onMouseEnter={() => flipCard("enter", "netflix-review")}
               onMouseLeave={() => flipCard("leave", "netflix-review")}
             >
-              <div className="card">
+              <div className="card" data-aos="flip-right">
                 <h3 id="netflix-review-head">Netflix Review</h3>
                 <img
                   src="https://res.cloudinary.com/notthattayo/image/upload/v1643374787/netflix.png"
@@ -224,7 +218,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div
+            {/* <div
               className="project-card-heading"
               onMouseEnter={() => flipCard("enter", "twitter-clone")}
               onMouseLeave={() => flipCard("leave", "twitter-clone")}
@@ -261,7 +255,14 @@ function Home() {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
+          </div>
+          <div className="contact_row">
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            >
+              Get In Touch
+            </button>
           </div>
         </div>
       </div>

@@ -5,6 +5,30 @@ export const techSkills = [
   //     "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
   //},
   {
+    tech: "Sass",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png",
+  },
+  {
+    tech: "Bootstrap",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg",
+  },
+  {
+    tech: "Tailwind Css",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+  },
+  {
+    tech: "Material UI",
+    image: "https://mui.com/static/logo.png",
+  },
+  {
+    tech: "Ant Design",
+    image:
+      "https://seeklogo.com/images/A/ant-design-logo-EAB6B3D5D9-seeklogo.com.png",
+  },
+  {
     tech: "Typescript",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZS46z5SkGjQhuLEwwkaxSHiU_aLS8jdlVx9aoiYo0oaWSHRE6&s",
@@ -15,9 +39,14 @@ export const techSkills = [
       "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
   },
   {
-    tech: "Sass",
+    tech: "Redux",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png",
+      "https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg",
+  },
+  {
+    tech: "React Query",
+    image:
+      "https://react-query-v3.tanstack.com/_next/static/images/emblem-light-628080660fddb35787ff6c77e97ca43e.svg",
   },
   {
     tech: "Testing Library",
@@ -30,43 +59,9 @@ export const techSkills = [
       "https://media.slid.es/avatars/1098231/Cypress_Logomark_Color_Dark_BG.jpg",
   },
   {
-    tech: "Redux",
-    image:
-      "https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg",
-  },
-  {
-    tech: "Firebase",
-    image:
-      "https://www.gstatic.com/devrel-devsite/prod/v4b49895941ba1dd2df68fee10a0f3d4e3a71c73f4e3e8932eba1481cb318e8c2/firebase/images/lockup.svg?dcb_=0.2464704347908997",
-  },
-  {
-    tech: "Material UI",
-    image: "https://mui.com/static/logo.png",
-  },
-  // {
-  //   tech: "Aws",
-  //   image:
-  //     "//upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/150px-Amazon_Web_Services_Logo.svg.png",
-  // },
-  {
-    tech: "Azure",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/1200px-Microsoft_Azure.svg.png",
-  },
-  {
     tech: "Node Js",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjiFSw6GbHO7TbjTAXWVvB1thrvnv3zWMSQw&usqp=CAU",
-  },
-  // {
-  //   tech: "GraphQL",
-  //   image:
-  //     "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/2048px-GraphQL_Logo.svg.png",
-  // },
-  {
-    tech: "React Query",
-    image:
-      "https://react-query-v3.tanstack.com/_next/static/images/emblem-light-628080660fddb35787ff6c77e97ca43e.svg",
   },
   {
     tech: "Mongo Db",
@@ -78,6 +73,29 @@ export const techSkills = [
     image:
       "https://thumbs.dreamstime.com/b/sql-database-icon-logo-design-ui-ux-app-orange-inscription-shadow-96841969.jpg",
   },
+  {
+    tech: "Firebase",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg",
+  },
+
+  // {
+  //   tech: "Aws",
+  //   image:
+  //     "//upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/150px-Amazon_Web_Services_Logo.svg.png",
+  // },
+  {
+    tech: "Azure",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/1200px-Microsoft_Azure.svg.png",
+  },
+
+  // {
+  //   tech: "GraphQL",
+  //   image:
+  //     "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/2048px-GraphQL_Logo.svg.png",
+  // },
+
   // {
   //   tech: "Heroku",
   //   image: "",

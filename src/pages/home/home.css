@@ -185,6 +185,27 @@ a {
   justify-content: center;
 }
 
+.contact_row{
+  margin: 2em auto;
+  width: 80%;
+  max-width: 1200px;
+  border-top: 2px solid #86bef5;
+  text-align: center;
+}
+.contact_row button {
+  margin-top: 2em;
+  padding: 1em;
+  color: #222733;
+  background-color: #fefefe;
+  border-radius: 5px;
+  border:none;
+}
+.contact_row button:hover {
+  background-color: #2160a0;
+  cursor: pointer;
+  color: #fefefe;
+
+}
 @media only screen and (max-width: 800px) {
   .main-content {
     flex-direction: column;
@@ -232,6 +253,21 @@ a {
   }
   .card {
     max-width: 100%;
+  }
+
+  .card-details  {
+    display: contents !important;
+  }
+  .card-details p {
+    color: #fefefe;
+  }
+  .card-details span {
+    color:#2160a0;
+    background-color: #fefefe;
+    border: none;
+    padding: 0 3px;
+    border-radius: 3px;
+    margin-right: 3px;
   }
 }
 

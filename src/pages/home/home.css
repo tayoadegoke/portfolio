@@ -262,10 +262,11 @@ a {
     color: #fefefe;
   }
   .card-details span {
-    color:#2160a0;
-    background-color: #fefefe;
+    color: white;
+    background-color: transparent;
+    font-weight: bolder;
     border: none;
-    padding: 0 3px;
+    border-bottom: solid 1px #86bef5;
     border-radius: 3px;
     margin-right: 3px;
   }

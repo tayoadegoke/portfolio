@@ -218,44 +218,6 @@ function Home() {
                 </div>
               </div>
             </div>
-            {/* <div
-              className="project-card-heading"
-              onMouseEnter={() => flipCard("enter", "twitter-clone")}
-              onMouseLeave={() => flipCard("leave", "twitter-clone")}
-            >
-              <div className="card">
-                <h3 id="twitter-clone-head">Twitter Clone</h3>
-                <img
-                  src="https://res.cloudinary.com/notthattayo/image/upload/v1643374838/twit.png"
-                  id="twitter-clone-img"
-                ></img>
-                <div className="card-details" id="twitter-clone-details">
-                  <p>
-                    <span>About : </span> A Simple Twitter clone with Minimal
-                    Functionality.
-                  </p>
-                  <p>
-                    <span>Tech Stack: </span> React , Material UI, and Firebase
-                  </p>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://social-app-7a613.web.app/"
-                  >
-                    {" "}
-                    <button>View Application</button>
-                  </a>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://github.com/notthattayo/react-twitter-clone"
-                  >
-                    {" "}
-                    <button>Github</button>
-                  </a>
-                </div>
-              </div>
-            </div> */}
           </div>
           <div className="contact_row">
             <button

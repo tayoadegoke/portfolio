@@ -140,45 +140,7 @@ function Home() {
           </h1>
 
           <div className="projects-row" data-aos="fade-up">
-            <div
-              className="project-card-heading"
-              onMouseEnter={() => flipCard("enter", "sms-portal")}
-              onMouseLeave={() => flipCard("leave", "sms-portal")}
-            >
-              <div className="card" data-aos="flip-right">
-                <h3 id="sms-portal-head">Sms Portal</h3>
-                <img
-                  src="https://res.cloudinary.com/notthattayo/image/upload/v1672216858/Screen_Shot_2022-12-28_at_8.40.31_AM.png"
-                  id="sms-portal-img"
-                ></img>
-                <div className="card-details" id="sms-portal-details">
-                  <p>
-                    <span>About : </span> An SMS portal for internal staff of a
-                    company to communicate with external clients via Sms.
-                  </p>
-                  <p>
-                    <span>Tech Stack: </span> React, NodeJs, React-Redux, React
-                    Router, Express, Socket.io, MongoDb and Twilio Api{" "}
-                  </p>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://heartfelt-bombolone-9b4a01.netlify.app/"
-                  >
-                    {" "}
-                    <button>View Application</button>{" "}
-                  </a>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://github.com/notthattayo/sms-portal"
-                  >
-                    {" "}
-                    <button>Github</button>{" "}
-                  </a>
-                </div>
-              </div>
-            </div>
+            {/*project one*/}
             <div
               className="project-card-heading"
               onMouseEnter={() => flipCard("enter", "netflix-review")}
@@ -211,6 +173,49 @@ function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://github.com/notthattayo/netflix-review"
+                  >
+                    {" "}
+                    <button>Github</button>{" "}
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/*project two*/}
+
+            <div
+              className="project-card-heading"
+              onMouseEnter={() => flipCard("enter", "sms-portal")}
+              onMouseLeave={() => flipCard("leave", "sms-portal")}
+            >
+              <div className="card" data-aos="flip-right">
+                <h3 id="sms-portal-head">Sms Portal</h3>
+                <img
+                  src="https://res.cloudinary.com/notthattayo/image/upload/v1672216858/Screen_Shot_2022-12-28_at_8.40.31_AM.png"
+                  id="sms-portal-img"
+                ></img>
+                <div className="card-details" id="sms-portal-details">
+                  <p>
+                    <span>About : </span> A Web Based SMS portal for internal
+                    staff of a company to communicate with external clients via
+                    Sms.
+                  </p>
+                  <p>
+                    <span>Tech Stack: </span> React, NodeJs, React-Redux, React
+                    Router, Express, Socket.io, MongoDb and Twilio Api{" "}
+                  </p>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://heartfelt-bombolone-9b4a01.netlify.app/"
+                  >
+                    {" "}
+                    <button>View Application</button>{" "}
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/notthattayo/sms-portal"
                   >
                     {" "}
                     <button>Github</button>{" "}

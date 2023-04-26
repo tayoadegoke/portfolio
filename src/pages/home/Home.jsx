@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 import Aos from "aos";
 import "../../components/Navbar/navbar.css";
 import "./home.css";
@@ -9,7 +8,6 @@ import { techSkills } from "../../utils.js";
 function Home() {
   useEffect(() => {
     const body = document.getElementsByTagName("body")[0];
-    const navbar = document.getElementsByClassName("navbar")[0];
     const wrapper = document.getElementById("wrapper");
     const intro = document.getElementById("intro");
 
@@ -35,11 +33,12 @@ function Home() {
         cardImg.style.display = "none";
         cardDetails.style.display = "block";
         title.style.color = "white";
+        title.style.opacity = 1;
       } else {
         console.log("mouse out");
         cardImg.style.display = "block";
         cardDetails.style.display = "none";
-        title.style.color = "grey";
+        title.style.opacity = 0.5;
       }
     }
   };
@@ -88,7 +87,7 @@ function Home() {
               <div>
                 <a
                   target="_blank"
-                  href="https://github.com/notthattayo"
+                  href="https://github.com/tayoadegoke"
                   rel="noopener noreferrer"
                 >
                   {" "}
@@ -98,7 +97,7 @@ function Home() {
             </div>
 
             <a
-              href="https://drive.google.com/file/d/1jfiKTRCCumUM9EJM-I684VtAoPW0cWBF/view?usp=sharing"
+              href="https://drive.google.com/file/d/13_R1i0UWFil4uUZq4bfE0arOZvj5--13/view?usp=share_link"
               target={"_blank"}
             >
               {" "}

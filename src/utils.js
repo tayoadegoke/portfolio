@@ -45,8 +45,7 @@ export const techSkills = [
   },
   {
     tech: "React Query",
-    image:
-      "https://react-query-v3.tanstack.com/_next/static/images/emblem-light-628080660fddb35787ff6c77e97ca43e.svg",
+    image: "https://vectorwiki.com/images/Skj0l__react-query-icon.svg",
   },
   {
     tech: "Testing Library",

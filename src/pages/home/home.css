@@ -109,16 +109,16 @@
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  widows: 50%;
+  width: 100%;
 }
 
 .tech-skills {
-  align-items: center;
   padding: 4px;
-  align-items: center;
   vertical-align: center;
   flex-wrap: wrap;
+ flex: 1;
 }
+
 .tech-skills p {
   font-size: 0.9em;
   font-weight: 400;

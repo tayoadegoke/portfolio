@@ -182,7 +182,7 @@ function Home() {
 
             {/*project two*/}
 
-            <div
+            {/* <div
               className="project-card-heading"
               onMouseEnter={() => flipCard("enter", "sms-portal")}
               onMouseLeave={() => flipCard("leave", "sms-portal")}
@@ -221,7 +221,7 @@ function Home() {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="contact_row">
             <button

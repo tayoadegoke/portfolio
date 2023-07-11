@@ -222,6 +222,94 @@ function Home() {
                 </div>
               </div>
             </div> */}
+
+            {/*project two*/}
+
+            <div
+              className="project-card-heading"
+              onMouseEnter={() => flipCard("enter", "twitter-clone")}
+              onMouseLeave={() => flipCard("leave", "twitter-clone")}
+            >
+              <div className="card">
+                <h3 id="twitter-clone-head">Twitter Clone</h3>
+                <img
+                  src="https://res.cloudinary.com/notthattayo/image/upload/v1643374838/twit.png"
+                  id="twitter-clone-img"
+                ></img>
+                <div className="card-details" id="twitter-clone-details">
+                  <p>
+                    <span>About : </span> A Simple Twitter clone with Minimal
+                    Functionality.
+                  </p>
+                  <p>
+                    <span>Tech Stack: </span> React , Material UI, and Firebase
+                  </p>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://social-app-7a613.web.app/"
+                  >
+                    {" "}
+                    <button>View Application</button>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/tayoadegoke/react-twitter-clone"
+                    >
+                      {" "}
+                      <button>Github</button>{" "}
+                    </a>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/*project three*/}
+
+            <div
+              className="project-card-heading"
+              onMouseEnter={() => flipCard("enter", "bugzy")}
+              onMouseLeave={() => flipCard("leave", "bugzy")}
+            >
+              <div className="card">
+                <h3 id="bugzy-head">Bugzy Music Player</h3>
+
+                <img
+                  src="https://res.cloudinary.com/notthattayo/image/upload/v1689076789/Screen_Shot_2023-07-11_at_12.59.24_PM.png"
+                  id="bugzy-img"
+                  style={{ objectFit: "contain", height: "100%" }}
+                ></img>
+
+                <div className="card-details" id="bugzy-details">
+                  <p>
+                    <span>About : </span> A Simple music player application that
+                    allows users listen to Bugzy Malone songs. It shows the song
+                    duration, and allows for increasing and decreasing volume
+                    outputs, fast forward and rewind functionality, Next and
+                    previous song fuctionality, pause and play functionality.
+                  </p>
+                  <p>
+                    <span>Tech Stack: </span> HTML, CSS, Javascript
+                  </p>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://tayoadegoke.github.io/Bugzymusicplayer/"
+                  >
+                    {" "}
+                    <button>View Application</button>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/tayoadegoke/Bugzymusicplayer"
+                    >
+                      {" "}
+                      <button>Github</button>{" "}
+                    </a>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="contact_row">
             <button

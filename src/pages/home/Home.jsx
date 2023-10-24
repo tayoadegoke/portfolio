@@ -231,30 +231,29 @@ function Home() {
               onMouseLeave={() => flipCard("leave", "twitter-clone")}
             >
               <div className="card">
-                <h3 id="twitter-clone-head">Twitter Clone</h3>
+                <h3 id="twitter-clone-head">Sample UI Build</h3>
                 <img
-                  src="https://res.cloudinary.com/notthattayo/image/upload/v1643374838/twit.png"
+                  src="https://res.cloudinary.com/notthattayo/image/upload/v1698180270/samplePage.png"
                   id="twitter-clone-img"
                 ></img>
                 <div className="card-details" id="twitter-clone-details">
                   <p>
-                    <span>About : </span> A Simple Twitter clone with Minimal
-                    Functionality.
+                    <span>About : </span> A sample page based on a given design image. Note that no other assets were provided for this implementation apart from the image. click <a href="https://drive.google.com/file/d/1xQhvv3Qjqpk8fiycD5u0YdjPzCQnWJdJ/view" target="_blank" style={{ color: 'pink' }}>here</a> to view design.
                   </p>
                   <p>
-                    <span>Tech Stack: </span> React , Material UI, and Firebase
+                    <span>Tech Stack: </span> React, Css, Framer Motion
                   </p>
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://social-app-7a613.web.app/"
+                    href="https://tayoadegoke.github.io/onlycoders-samplepage/"
                   >
                     {" "}
                     <button>View Application</button>
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://github.com/tayoadegoke/react-twitter-clone"
+                      href="https://github.com/tayoadegoke/onlycoders-samplepage"
                     >
                       {" "}
                       <button>Github</button>{" "}

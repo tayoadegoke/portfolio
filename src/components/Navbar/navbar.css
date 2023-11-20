@@ -6,23 +6,28 @@
   position: fixed;
   z-index: 1000;
   width: 100%;
+  max-width: 100vw;
+  animation: navitems 4s;
+  display: none;
 }
+
 .navbar-content {
   max-width: 1200px;
   display: flex;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
-  animation: navitems 8s ease-in;
   width: 80%;
   background-color: black;
 }
+
 .navbar-content h3 {
   font-size: 1.5em;
   color: white;
   text-align: center;
   padding-left: 1em;
 }
+
 .navbar-content ul {
   margin: 0 auto !important;
   width: 100%;
@@ -33,6 +38,7 @@
   text-align: center;
   padding-right: 1em;
 }
+
 .navbar-content ul li {
   display: inline;
   padding: 15px;
@@ -45,6 +51,7 @@
   text-decoration: none;
   color: #fefefe;
 }
+
 a {
   text-decoration: none;
   color: #fefefe;
@@ -68,28 +75,34 @@ a {
     width: 50px;
     margin-right: 10px;
   }
+
   .navbar {
     position: fixed;
     z-index: 999;
     background-color: black;
   }
+
   .navbar ul {
     display: none;
     padding-right: 2em;
   }
+
   .navbar ul li {
     margin-bottom: 2rem;
   }
+
   .navbar-content {
     flex-wrap: wrap;
     width: 100%;
   }
+
   .navbar-content h3 {
     font-size: 1.2rem;
     color: white;
     text-align: left;
     margin-left: 0;
   }
+
   .stretch {
     display: flex !important;
     flex-direction: column;
@@ -108,8 +121,24 @@ a {
   0% {
     opacity: 0;
   }
+
+  50% {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+  }
+
+  95% {
+    opacity: 1;
+    position: absolute;
+    bottom: 90%;
+  }
+
   100% {
     opacity: 1;
+    position: fixed;
+    width: 100%;
+
   }
 }
 
@@ -117,6 +146,7 @@ a {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }

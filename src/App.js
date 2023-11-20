@@ -7,10 +7,9 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Projects from "./pages/projects/Projects";
+
 import Navbar from "./components/Navbar/Navbar";
-import About from "./pages/about/About";
-import Contact from "./pages/contact/contact";
+
 
 function App() {
   return (
@@ -19,9 +18,6 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home}></Route>
-          {/* <Route path="/projects" component={Projects}></Route>
-          <Route path="/about" component={About}></Route>
-          <Route path="/contact" component={Contact}></Route> */}
         </Switch>
       </div>
     </HashRouter>

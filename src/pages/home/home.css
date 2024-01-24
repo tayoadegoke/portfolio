@@ -390,12 +390,12 @@ a {
   }
 
   @keyframes rotate-list-sm {
-    50% {
-      rotate: 20deg;
+    0% {
+      rotate: 10deg;
     }
 
     100% {
-      rotate: 0;
+      rotate: 10deg;
     }
   }
 }

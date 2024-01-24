@@ -63,7 +63,7 @@ function Home() {
                 <li onClick={() => setSelectedSection('home')} className={`${selectedSection === 'home' && 'active'}`}><FontAwesomeIcon icon={faHome} /></li>
                 <li onClick={() => setSelectedSection('about')} className={`${selectedSection === 'about' && 'active'}`}><FontAwesomeIcon icon={faUser} /></li>
                 <li onClick={() => setSelectedSection('projects')} className={`${selectedSection === 'projects' && 'active'}`}><FontAwesomeIcon icon={faCode} /></li>
-                <li onClick={() => window.open("https://drive.google.com/file/d/10cLTSloFTUmhlYq9ACd7cy8-RPCJ_IML/view?usp=sharing", "_blank")}><FontAwesomeIcon icon={faVcard} /></li>
+                <li onClick={() => window.open("https://drive.google.com/file/d/1suH9iDeNlPBuSu1DRjQ4-eihzGJ46ko_/view?usp=drive_link", "_blank")}><FontAwesomeIcon icon={faVcard} /></li>
               </ul>
               <img
                 className="profile-img"
@@ -117,7 +117,7 @@ function Home() {
                 </div>
 
                 <a
-                  href="https://drive.google.com/file/d/10cLTSloFTUmhlYq9ACd7cy8-RPCJ_IML/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1suH9iDeNlPBuSu1DRjQ4-eihzGJ46ko_/view?usp=drive_link"
                   target={"_blank"}
                 >
                   {" "}
@@ -150,6 +150,8 @@ function Home() {
                       );
                     })}
                   </div>
+                  <div className="contact_row"></div>
+                  <button className="btn" style={{ marginBottom: '1em' }} onClick={() => setSelectedSection('projects')}>View My Projects</button>
                 </div>
               </div>
             }

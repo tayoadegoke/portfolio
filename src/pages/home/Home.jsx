@@ -60,10 +60,10 @@ function Home() {
           <div className="bio-details">
             <div className="rotating-nav-container">
               <ul className="rotating-nav">
-                <li onClick={() => setSelectedSection('home')} className={`${selectedSection === 'home' && 'active'}`}><FontAwesomeIcon icon={faHome} /></li>
-                <li onClick={() => setSelectedSection('about')} className={`${selectedSection === 'about' && 'active'}`}><FontAwesomeIcon icon={faUser} /></li>
-                <li onClick={() => setSelectedSection('projects')} className={`${selectedSection === 'projects' && 'active'}`}><FontAwesomeIcon icon={faCode} /></li>
-                <li onClick={() => window.open("https://drive.google.com/file/d/1suH9iDeNlPBuSu1DRjQ4-eihzGJ46ko_/view?usp=drive_link", "_blank")}><FontAwesomeIcon icon={faVcard} /></li>
+                <li onClick={() => setSelectedSection('home')} className={`${selectedSection === 'home' && 'active'}`} title="Home"><FontAwesomeIcon icon={faHome} /> </li>
+                <li onClick={() => setSelectedSection('about')} className={`${selectedSection === 'about' && 'active'}`} title="About"><FontAwesomeIcon icon={faUser} /></li>
+                <li onClick={() => setSelectedSection('projects')} className={`${selectedSection === 'projects' && 'active'}`} title="Projects"><FontAwesomeIcon icon={faCode} /></li>
+                <li onClick={() => window.open("https://drive.google.com/file/d/1suH9iDeNlPBuSu1DRjQ4-eihzGJ46ko_/view?usp=drive_link", "_blank")} title="Resume"><FontAwesomeIcon icon={faVcard} /></li>
               </ul>
               <img
                 className="profile-img"
@@ -78,13 +78,10 @@ function Home() {
             {selectedSection === 'home' &&
               <>
                 <h1>
-                  Hello there &#128512; <br /> I am{" "}
+                  Hello 👋🏽 , <br /> I am{" "}
                   <span className="highlight">Tayo Adegoke,</span> a{" "}
-                  <span className={"highlight"}>full stack developer</span> from
-                  Nigeria <span>🇳🇬</span> currently based in the united kingdom
-                  <span> 🇬🇧</span> and I enjoy creating awesome{" "}
-                  <span className="highlight">web applications.</span> How about
-                  you?
+                  <span className={"highlight"}>full stack developer</span> with over 4 years of experience
+                  <span > building software applications that solve business problems.</span>
                 </h1>
                 <div className="container-div">
                   <div>

@@ -155,7 +155,7 @@
 }
 
 .bio-details h1 {
-  font-size: 1.6em;
+  font-size: 1.4em;
   line-height: 1.5;
   font-weight: 500;
   max-width: 70%;
@@ -224,6 +224,7 @@ a {
   font-size: 1.2em;
   cursor: pointer;
   margin-top: 1em;
+  margin-bottom: 2em;
   border: none;
 }
 

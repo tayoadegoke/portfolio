@@ -44,7 +44,7 @@ function Landing() {
             </Link>
           </div>
 
-          <div className="social-links">
+          {/* <div className="social-links">
             <a
               target="_blank"
               href="https://www.linkedin.com/in/omotayo-a-33a3a3120/"
@@ -71,8 +71,8 @@ function Landing() {
             >
               <FontAwesomeIcon icon={faGithub} className="social-icon" />
             </a>
-          </div>
-        </div>
+          </div> */}
+        </div> 
 
         <div className="profile-section">
           <img

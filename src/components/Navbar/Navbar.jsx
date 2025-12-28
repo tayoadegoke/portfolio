@@ -1,63 +1,90 @@
-import React, { useState, useEffect } from "react";
-import { Redirect } from "react-router";
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./navbar.css";
 
 function Navbar() {
   const [navOpen, setNavOpen] = useState(false);
+  const location = useLocation();
+
   const toggleNav = () => {
     setNavOpen(!navOpen);
   };
-  useEffect(() => {
-    const navLinks = document.getElementById("links");
-    if (navOpen) {
-      navLinks.classList.add("stretch");
-    } else {
-      navLinks.classList.remove("stretch");
-    }
-  }, [navOpen]);
 
-  const scroll = (target) => {
-    document.getElementById(target).scrollIntoView({ behavior: "smooth" });
+  const closeNav = () => {
+    setNavOpen(false);
   };
+
+  const isActive = (path) => {
+    return location.pathname === path;
+  };
+
   return (
-    <div className="navbar">
-      <div className="navbar-content">
-        <h3>
-          <Link to={"/"}>T.A</Link>
-        </h3>
-        <img src="./hamb.png" id="hamburger" onClick={() => toggleNav()}></img>
-        <ul
-          className="navbar-links"
-          id="links"
-          onClick={() => {
-            setNavOpen(false);
-          }}
+    <nav className="navbar">
+      <div className="navbar-container">
+        <Link to="/" className="logo" onClick={closeNav}>
+          <span className="logo-text">T.A</span>
+        </Link>
+
+        <button
+          className={`hamburger ${navOpen ? "active" : ""}`}
+          onClick={toggleNav}
+          aria-label="Toggle navigation"
         >
-          <a onClick={() => scroll("home")}>
-            <li>Home</li>
-          </a>
-          <a onClick={() => scroll("about")}>
-            <li>About</li>
-          </a>
-          <a onClick={() => scroll("projects")}>
-            <li>Projects</li>
-          </a>
-          <a
-            href={
-              "https://drive.google.com/file/d/10cLTSloFTUmhlYq9ACd7cy8-RPCJ_IML/view?usp=sharing"
-            }
-            target="_blank"
-            className="nav-item"
-          >
-            <li>Resume</li>
-          </a>
-          {/* <div className="nav-item">
-            <li>Contact</li>
-          </div> */}
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul className={`nav-menu ${navOpen ? "active" : ""}`}>
+          <li className="nav-item">
+            <Link
+              to="/"
+              className={`nav-link ${isActive("/") ? "active" : ""}`}
+              onClick={closeNav}
+            >
+              Home
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/about"
+              className={`nav-link ${isActive("/about") ? "active" : ""}`}
+              onClick={closeNav}
+            >
+              About
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/projects"
+              className={`nav-link ${isActive("/projects") ? "active" : ""}`}
+              onClick={closeNav}
+            >
+              Projects
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/contact"
+              className={`nav-link ${isActive("/contact") ? "active" : ""}`}
+              onClick={closeNav}
+            >
+              Contact
+            </Link>
+          </li>
+          <li className="nav-item">
+            <a
+              href="https://drive.google.com/file/d/1TBhT1nQBJwLo5g-WjzkjRPyFErhcvkvd/view"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-link resume-link"
+            >
+              Resume
+            </a>
+          </li>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 }
 

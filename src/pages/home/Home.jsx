@@ -63,7 +63,7 @@ function Home() {
                 <li onClick={() => setSelectedSection('home')} className={`${selectedSection === 'home' && 'active'}`} title="Home"><FontAwesomeIcon icon={faHome} /> </li>
                 <li onClick={() => setSelectedSection('about')} className={`${selectedSection === 'about' && 'active'}`} title="About"><FontAwesomeIcon icon={faUser} /></li>
                 <li onClick={() => setSelectedSection('projects')} className={`${selectedSection === 'projects' && 'active'}`} title="Projects"><FontAwesomeIcon icon={faCode} /></li>
-                <li onClick={() => window.open("https://drive.google.com/file/d/1suH9iDeNlPBuSu1DRjQ4-eihzGJ46ko_/view?usp=drive_link", "_blank")} title="Resume"><FontAwesomeIcon icon={faVcard} /></li>
+                <li onClick={() => window.open("https://drive.google.com/file/d/1TBhT1nQBJwLo5g-WjzkjRPyFErhcvkvd/view", "_blank")} title="Resume"><FontAwesomeIcon icon={faVcard} /></li>
               </ul>
               <img
                 className="profile-img"

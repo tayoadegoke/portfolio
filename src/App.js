@@ -1,24 +1,27 @@
-import React from "react";
 import "./App.css";
-import Home from "./pages/home/Home";
+import Landing from "./pages/Landing/Landing";
+import About from "./pages/About/About";
+import Projects from "./pages/Projects/Projects";
+import Contact from "./pages/Contact/Contact";
 import {
   HashRouter,
-  BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
 } from "react-router-dom";
 
 import Navbar from "./components/Navbar/Navbar";
-
 
 function App() {
   return (
     <HashRouter basename="/">
       <div className="App">
         <Navbar />
-        <Switch>
-          <Route exact path="/" component={Home}></Route>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </div>
     </HashRouter>
   );

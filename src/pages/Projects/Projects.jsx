@@ -24,11 +24,11 @@ function Projects() {
       category: "Exploration"
     },
     {
-      title: "Netflix Review",
+      title: "Movie Review",
       description: "An application to review netflix movies and watch movie trailers",
       tech: ["React", "Material UI", "Node.js", "Express", "MongoDB", "Firebase"],
       image: "https://res.cloudinary.com/notthattayo/image/upload/v1643374787/netflix.png",
-      liveUrl: "https://netflix-review-a96cf.web.app/",
+      liveUrl: "https://movie-review-966066459395.europe-west1.run.app/",
       githubUrl: "https://github.com/notthattayo/netflix-review",
       category: "Exploration"
     },

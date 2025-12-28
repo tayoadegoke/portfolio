@@ -5,12 +5,12 @@ function About() {
     {
       company: "Medivet",
       location: "Watford, UK",
-      period: "2022-2025",
+      period: "2022-2026",
       role: "Software Engineer",
       bullets: [
-        "Working on client facing web application using NextJs and Material UI to enable over 40,000 client's book medical appointments for their pets.",
-        "Working on a staff portal web application using NextJs and MaterialUI to simplify day to day business activities like user management, cash submissions, drug requests and subscription product management.",
         "Working on backend API's using C# .NET to support requests from both clients and staff.",
+        "Working on client facing web application using NextJs and Material UI to enable over 40,000 client's book medical appointments for their pets.",
+        "Worked on a staff portal web application using NextJs and MaterialUI to simplify day to day business activities like user management, cash submissions, drug requests and subscription product management.",
         "Created documentation for running applications locally to enable new starters get up to speed.",
         "Wrote unit and integration tests using the React testing library and end to end tests using cypress, to ensure front end applications were robust, while developing features."
       ]

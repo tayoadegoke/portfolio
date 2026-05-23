@@ -16,7 +16,7 @@ function Projects() {
     },
     {
       title: "Solar Data",
-      description: "A solar energy management application that enables users to register installation locations, specify equipment requirements, and monitor system performance. Features user authentication, Google Maps integration for location marking, and internationalization support.",
+      description: "A solar energy management application that enables users to register installation locations and specify equipment requirements. Features user authentication, Google Maps integration for location marking, and internationalization support.",
       tech: ["CSS", "Next.js", "Material UI", "Python", "FastAPI", "Google APIs", "Docker", "SQLite"],
       image: "https://res.cloudinary.com/notthattayo/image/upload/v1766935756/sd_zskwvl.png",
       liveUrl: "https://solar-data.tech.tayoadegoke.com",

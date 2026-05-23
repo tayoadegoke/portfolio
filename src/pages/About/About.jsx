@@ -10,6 +10,7 @@ function About() {
       bullets: [
         "Working on backend API's using C# .NET to support requests from both clients and staff.",
         "Working on client facing web application using NextJs and Material UI to enable over 40,000 client's book medical appointments for their pets.",
+        "Implemented third party API integration with Stannp for mailing physical letters to clients, leveraging asynchronous patterns.",
         "Worked on a staff portal web application using NextJs and MaterialUI to simplify day to day business activities like user management, cash submissions, drug requests and subscription product management.",
         "Created documentation for running applications locally to enable new starters get up to speed.",
         "Wrote unit and integration tests using the React testing library and end to end tests using cypress, to ensure front end applications were robust, while developing features."
@@ -39,11 +40,10 @@ function About() {
   ];
 
   const skills = {
-    frontend: ["CSS", "HTML", "JavaScript", "TypeScript", "React", "Next.js", "Angular"],
-    styling: ["Bootstrap", "Material UI", "Tailwind CSS"],
+    frontend: ["CSS", "HTML", "JavaScript", "TypeScript", "React", "Next.js", "Bootstrap", "Material UI", "Tailwind CSS", "ShadCN","Tanstack"],
     backend: ["Node.js", "C# .NET", "Python FastAPI"],
-    databases: ["MongoDB", "PostgreSQL", "MySQL"],
-    cloud: ["Azure"]
+    databases: ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
+    cloud: ["Linux","Bash","Powershell","YAML","Networking","Git","Docker","Kubernetes","Terraform","Azure", "Google Cloud"]
   };
 
   const education = [
@@ -123,14 +123,6 @@ function About() {
               </div>
             </div>
             <div className="skill-category">
-              <h3>Styling</h3>
-              <div className="skill-tags">
-                {skills.styling.map((skill, index) => (
-                  <span key={index} className="skill-tag">{skill}</span>
-                ))}
-              </div>
-            </div>
-            <div className="skill-category">
               <h3>Backend</h3>
               <div className="skill-tags">
                 {skills.backend.map((skill, index) => (
@@ -147,7 +139,7 @@ function About() {
               </div>
             </div>
             <div className="skill-category">
-              <h3>Cloud</h3>
+              <h3>Devops & Cloud</h3>
               <div className="skill-tags">
                 {skills.cloud.map((skill, index) => (
                   <span key={index} className="skill-tag">{skill}</span>

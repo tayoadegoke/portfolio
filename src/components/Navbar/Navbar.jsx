@@ -1,33 +1,38 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./navbar.css";
 
 function Navbar() {
   const [navOpen, setNavOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
 
-  const toggleNav = () => {
-    setNavOpen(!navOpen);
-  };
+  useEffect(() => {
+    const onScroll = () => {
+      const y = window.scrollY;
+      setScrolled(prev => (prev ? y > 20 : y > 50));
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
-  const closeNav = () => {
+  useEffect(() => {
     setNavOpen(false);
-  };
+  }, [location]);
 
-  const isActive = (path) => {
-    return location.pathname === path;
-  };
+  const isActive = (path) => location.pathname === path;
+  const isOnDark = location.pathname === "/contact";
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${scrolled ? "scrolled" : ""} ${isOnDark ? "on-dark" : ""}`}>
       <div className="navbar-container">
-        <Link to="/" className="logo" onClick={closeNav}>
-          <span className="logo-text">T.A</span>
+        <Link to="/" className="logo">
+          <span className="logo-text">Tayo<span>.</span></span>
         </Link>
 
         <button
           className={`hamburger ${navOpen ? "active" : ""}`}
-          onClick={toggleNav}
+          onClick={() => setNavOpen(!navOpen)}
           aria-label="Toggle navigation"
         >
           <span></span>
@@ -37,38 +42,22 @@ function Navbar() {
 
         <ul className={`nav-menu ${navOpen ? "active" : ""}`}>
           <li className="nav-item">
-            <Link
-              to="/"
-              className={`nav-link ${isActive("/") ? "active" : ""}`}
-              onClick={closeNav}
-            >
+            <Link to="/" className={`nav-link ${isActive("/") ? "active" : ""}`}>
               Home
             </Link>
           </li>
           <li className="nav-item">
-            <Link
-              to="/about"
-              className={`nav-link ${isActive("/about") ? "active" : ""}`}
-              onClick={closeNav}
-            >
+            <Link to="/about" className={`nav-link ${isActive("/about") ? "active" : ""}`}>
               About
             </Link>
           </li>
           <li className="nav-item">
-            <Link
-              to="/projects"
-              className={`nav-link ${isActive("/projects") ? "active" : ""}`}
-              onClick={closeNav}
-            >
+            <Link to="/projects" className={`nav-link ${isActive("/projects") ? "active" : ""}`}>
               Projects
             </Link>
           </li>
           <li className="nav-item">
-            <Link
-              to="/contact"
-              className={`nav-link ${isActive("/contact") ? "active" : ""}`}
-              onClick={closeNav}
-            >
+            <Link to="/contact" className={`nav-link ${isActive("/contact") ? "active" : ""}`}>
               Contact
             </Link>
           </li>

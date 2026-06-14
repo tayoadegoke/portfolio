@@ -7,6 +7,15 @@ function Projects() {
 
   const projects = [
     {
+      title: "Procure AI",
+      description:
+        "Document intelligence platform for procurement teams. Uploads are automatically categorised and analysed by an AI agent that surfaces actionable recommendations. Features a searchable document store, built with Next.js, FastAPI, LangGraph, OpenAI and Cloudflare R2, deployed on DigitalOcean.",
+      tech: ["Next.js", "Tailwind CSS", "ShadCN UI", "Python","FastAPI", "LangGraph", "Cloudflare R2", "Open AI", "Digital Ocean"],
+      image: "https://res.cloudinary.com/notthattayo/image/upload/v1781435601/Screenshot_2026-06-14_at_12.12.58_zgilpn.png",
+      liveUrl: "https://procureai.tech.tayoadegoke.com",
+      category: "Exploration",
+    },
+    {
       title: "RTees Naturale",
       description:
         "E-commerce application for natural products featuring product management, shopping cart, checkout flow, and order processing. Built with modern headless CMS architecture and deployed using Docker on Google Cloud Run.",
